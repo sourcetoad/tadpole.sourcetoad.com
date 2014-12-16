@@ -1,0 +1,112 @@
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+h6 {
+  color:#000;
+  font-weight:400;
+}
+
+
+@mixin margins {
+  margin-top:10em;
+  margin-bottom:10em;
+}
+
+$green : #84bd00;
+
+
+.info__container,
+.intro__container,
+.docs__container,
+.generators__container {
+  @include margins;
+}
+
+.btn-green {
+  background-color:$green;
+  border:none;
+  border:1px solid $green;
+  border-radius:0px;
+  padding-right:1.5em;
+  padding-left:1.5em;
+  font-size:1.5em;
+  &:hover {
+    background:none;
+    color:$green;
+    border-color:$green;
+    transition:0.2s all linear;
+  }
+}
+
+.green {
+  color:$green;
+}
+
+
+// Header
+// *******************
+.header__container {
+  padding:5%;
+  ul {
+    margin-bottom:5em;
+    li {
+      display:inline-block;
+      padding:0 2em;
+      font-size:1.2em;
+      font-weight:500;
+      a {
+        color:#999;
+        &:hover {
+          color:$green;
+          text-decoration:none;
+        }
+      }
+    }
+  }
+  h2 {
+    color:#333;
+  }
+}
+
+.brand {
+  font-weight:500;
+}
+
+
+// Info
+// *******************
+.info__container {
+  i {
+    font-size:3em;
+    color: $green;
+  }
+  h3 {
+    color:#555;
+  }
+}
+
+
+
+
+// Intro
+// *******************
+.intro__container {
+  h2 {
+    text-align:center;
+  }
+  p {
+    text-align:left;
+    text-indent:1em;
+    font-size:1.1em;
+    font-weight:500;
+  }
+}
